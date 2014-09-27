@@ -31,7 +31,7 @@ public class Application extends Component {
 			FileInputStream file = new FileInputStream(fc.getSelectedFile());
 
 			// ManyToMany.readFileAndConvert(file, "ubm_rm_to_prototype_a");
-			CreateTableStatements.readFileAndConvert(file);
+			UpdateTableStatements.readFileAndConvert(file);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
